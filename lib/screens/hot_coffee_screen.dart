@@ -40,7 +40,7 @@ class _HotCofeeScreenState extends State<HotCofeeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Hot Coffee Screen'),
+        title: const Text('Hot Coffee Screen'),
       ),
       body: ListView(
         children: [

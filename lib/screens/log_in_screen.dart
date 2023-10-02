@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
               size: 28,
             )),
         backgroundColor: Colors.orange,
-        title: Text('Log in'),
+        title: const Text('Log in'),
       ),
       body: SingleChildScrollView(
         child: Column(

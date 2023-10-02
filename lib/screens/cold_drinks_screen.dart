@@ -53,14 +53,14 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Cold Drinks Screen'),
+        title: const Text('Cold Drinks Screen'),
       ),
       body: ListView(
         children: [
           for (int i = 0; i<colddrinks.length; i++)
             Container(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-              margin: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+              margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.grey.withOpacity(0.2),
@@ -82,19 +82,19 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Padding(
-                    padding: EdgeInsets.only(bottom: 12),
+                    padding: const EdgeInsets.only(bottom: 12),
                     child: Text(
                       '${colddrinks[i]}',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(bottom: 12),
+                    padding: const EdgeInsets.only(bottom: 12),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -105,7 +105,7 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
                               fontWeight: FontWeight.bold,
                               color: Colors.white.withOpacity(0.8)),
                         ),
-                        Text(
+                        const Text(
                           '30 ml',
                           style: TextStyle(
                               fontSize: 20,
@@ -115,7 +115,7 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 15),
+                  const SizedBox(height: 15),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -125,10 +125,10 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          padding: EdgeInsets.only(left: 12,right: 12,top: 10,bottom: 10),
+                          padding: const EdgeInsets.only(left: 12,right: 12,top: 10,bottom: 10),
                         ),
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Add to Favorites',
                           style: TextStyle(
                               color: Colors.white,
@@ -143,10 +143,10 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          padding: EdgeInsets.only(left: 23,right: 23,top: 5,bottom: 5),
+                          padding: const EdgeInsets.only(left: 23,right: 23,top: 5,bottom: 5),
                         ),
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Buy now',
                           style: TextStyle(
                               color: Colors.white,

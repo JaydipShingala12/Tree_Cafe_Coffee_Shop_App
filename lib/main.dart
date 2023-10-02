@@ -6,7 +6,7 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.black87),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     ),
   );
 }

@@ -11,7 +11,7 @@ class _HomeButtonBarState extends State<HomeButtonBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       height: 80,
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(0.4),

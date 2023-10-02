@@ -26,15 +26,15 @@ class _FeedbackPageState extends State<FeedbackPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Feedback'),
+        title: const Text('Feedback'),
       ),
       body: ListView(
         children: [
           Container(
             height: 555,
             width: 300,
-            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-            margin: EdgeInsets.symmetric(vertical: 100, horizontal: 15),
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            margin: const EdgeInsets.symmetric(vertical: 100, horizontal: 15),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.grey.withOpacity(0.5),
@@ -48,7 +48,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
             ),
             child: Column(
               children: [
-                Text(
+                const Text(
                   'Feedback Form',
                   style: TextStyle(
                       color: Colors.orange,
@@ -60,9 +60,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(height: 50),
+                      const SizedBox(height: 50),
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(5),
                         child: TextFormField(
                           cursorColor: Colors.white,
                           inputFormatters: [
@@ -77,9 +77,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
                             filled: true,
                             fillColor: Colors.white60,
                             labelText: "Name",
-                            labelStyle: TextStyle(color: Colors.white),
+                            labelStyle: const TextStyle(color: Colors.white),
                             hintText: "Enter Your Name",
-                            hintStyle: TextStyle(color: Colors.white),
+                            hintStyle: const TextStyle(color: Colors.white),
                           ),
                           validator: (value) {
                             if (value!.isEmpty) {
@@ -91,7 +91,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(5),
                         child: TextFormField(
                           cursorColor: Colors.white,
                           inputFormatters: [
@@ -106,9 +106,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
                             filled: true,
                             fillColor: Colors.white60,
                             labelText: "Email id",
-                            labelStyle: TextStyle(color: Colors.white),
+                            labelStyle: const TextStyle(color: Colors.white),
                             hintText: "Enter Your Email id",
-                            hintStyle: TextStyle(color: Colors.white),
+                            hintStyle: const TextStyle(color: Colors.white),
                           ),
                           keyboardType: TextInputType.emailAddress,
                           validator: (value) {
@@ -121,7 +121,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(5),
                         child: TextFormField(
                           cursorColor: Colors.white,
                           inputFormatters: [
@@ -136,9 +136,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
                             filled: true,
                             fillColor: Colors.white60,
                             labelText: "Subject",
-                            labelStyle: TextStyle(color: Colors.white),
+                            labelStyle: const TextStyle(color: Colors.white),
                             hintText: "Enter Your Subject",
-                            hintStyle: TextStyle(color: Colors.white),
+                            hintStyle: const TextStyle(color: Colors.white),
                           ),
                           validator: (value) {
                             if (value!.isEmpty) {
@@ -150,7 +150,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(5),
                         child: TextFormField(
                           cursorColor: Colors.white,
                           inputFormatters: [
@@ -165,9 +165,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
                             filled: true,
                             fillColor: Colors.white60,
                             labelText: "Message",
-                            labelStyle: TextStyle(color: Colors.white),
+                            labelStyle: const TextStyle(color: Colors.white),
                             hintText: "Enter Your Message",
-                            hintStyle: TextStyle(color: Colors.white),
+                            hintStyle: const TextStyle(color: Colors.white),
                           ),
                           validator: (value) {
                             if (value!.isEmpty) {
@@ -181,7 +181,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 ElevatedButton(
                   onPressed: () {
                     if (store.currentState!.validate()) {
@@ -208,7 +208,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange,
                   ),
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                 ),
               ],
             ),
@@ -219,7 +219,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
   }
 
   showsnk(context) {
-    var snk = SnackBar(
+    var snk = const SnackBar(
       content: Text('Thanks for Feedback Us.'),
       backgroundColor: Colors.green,
       behavior: SnackBarBehavior.floating,

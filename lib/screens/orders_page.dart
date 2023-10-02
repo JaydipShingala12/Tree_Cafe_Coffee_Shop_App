@@ -29,7 +29,7 @@ class _OrderPageState extends State<OrderPage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.orange,
-          title: Text('Orders'),
+          title: const Text('Orders'),
         ),
         body: ListView(
           children: [

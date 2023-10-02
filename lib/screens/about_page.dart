@@ -13,15 +13,15 @@ class _AboutPageState extends State<AboutPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('About Us'),
+        title: const Text('About Us'),
       ),
       body: ListView(
         children: [
           Container(
             height: 650,
             width: 300,
-            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-            margin: EdgeInsets.symmetric(vertical: 100, horizontal: 15),
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            margin: const EdgeInsets.symmetric(vertical: 100, horizontal: 15),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.grey.withOpacity(0.5),
@@ -35,7 +35,7 @@ class _AboutPageState extends State<AboutPage> {
             ),
             child: Column(
               children: [
-                Text(
+                const Text(
                   'About Us',
                   style: TextStyle(
                       color: Colors.orange,
@@ -46,7 +46,7 @@ class _AboutPageState extends State<AboutPage> {
                   alignment: Alignment.centerLeft,
                   height: 150,
                   width: 280,
-                  child: Text(
+                  child: const Text(
                     '     Introducing the Cafe Tree, your gateway to an extraordinary coffee experience at your fingertips. Our app is designed to revolutionize the way you connect with our coffee shop, offering convenience, personalized service, and a seamless coffee journey right from your mobile device.',
                     style: TextStyle(
                       color: Colors.white60,
@@ -54,92 +54,92 @@ class _AboutPageState extends State<AboutPage> {
                     ),
                   ),
                 ),
-                SizedBox(height: 25),
-                Text(
+                const SizedBox(height: 25),
+                const Text(
                   'Social Media',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 25,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Email id :-',
                           style: TextStyle(color: Colors.white60),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('cafetree1212@gmail.com'),
+                          child: const Text('cafetree1212@gmail.com'),
                         ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'LinkedIn :- ',
                           style: TextStyle(color: Colors.white60),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('@cafetree12'),
+                          child: const Text('@cafetree12'),
                         ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Twitter :-',
                           style: TextStyle(color: Colors.white60),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('@cafetree12'),
+                          child: const Text('@cafetree12'),
                         ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Facebook :-',
                           style: TextStyle(color: Colors.white60),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('@cafetree12'),
+                          child: const Text('@cafetree12'),
                         ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Instagram :-',
                           style: TextStyle(color: Colors.white60),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('@cafetree12'),
+                          child: const Text('@cafetree12'),
                         ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Youtube :-',
                           style: TextStyle(color: Colors.white60),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('@cafetree12'),
+                          child: const Text('@cafetree12'),
                         ),
                       ],
                     ),

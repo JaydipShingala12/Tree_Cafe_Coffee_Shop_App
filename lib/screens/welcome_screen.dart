@@ -16,8 +16,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        padding: EdgeInsets.only(top: 100.0, bottom: 40.0),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.only(top: 100.0, bottom: 40.0),
+        decoration: const BoxDecoration(
           color: Colors.black,
           image: DecorationImage(
             image: AssetImage('assets/images/splashscreen.jpg'),
@@ -67,7 +67,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                 builder: (context) => SignUpScreen()),
                           );
                         },
-                        child: Text(
+                        child: const Text(
                           'Sign Up',
                           style: TextStyle(
                               color: Colors.white,
@@ -91,7 +91,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                 builder: (context) => LoginScreen(data: List.empty(),)),
                           );
                         },
-                        child: Text(
+                        child: const Text(
                           'Log in',
                           style: TextStyle(
                               color: Colors.white,

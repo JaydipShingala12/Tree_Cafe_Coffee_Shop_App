@@ -40,7 +40,7 @@ class _NotificationPageState extends State<NotificationPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Notifications'),
+        title: const Text('Notifications'),
       ),
       body: ListView(
         children: [

@@ -13,7 +13,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Profile'),
+        title: const Text('Profile'),
       ),
       body: Container(
         height: 500,

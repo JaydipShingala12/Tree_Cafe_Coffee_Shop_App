@@ -231,7 +231,7 @@ class _HomepageState extends State<Homepage>
       ),
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.only(top: 15),
+          padding: const EdgeInsets.only(top: 15),
           child: ListView(
             children: [
               Padding(

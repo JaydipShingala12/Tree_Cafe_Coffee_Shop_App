@@ -32,7 +32,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 MaterialPageRoute(builder: (context) => WelcomeScreen()),
               );
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back,
               size: 28,
             )),
