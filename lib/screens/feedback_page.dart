@@ -2,8 +2,6 @@ import 'package:coffee_shop_app/screens/Home_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'log_in_screen.dart';
-
 class FeedbackPage extends StatefulWidget {
   const FeedbackPage({Key? key}) : super(key: key);
 

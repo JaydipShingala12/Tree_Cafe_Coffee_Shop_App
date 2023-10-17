@@ -23,7 +23,7 @@ class _HomeButtonBarState extends State<HomeButtonBar> {
           ),
         ],
       ),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Icon(

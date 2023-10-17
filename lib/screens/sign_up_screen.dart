@@ -1,9 +1,7 @@
-import 'package:coffee_shop_app/screens/Splash_Screen.dart';
 import 'package:coffee_shop_app/screens/log_in_screen.dart';
 import 'package:coffee_shop_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'Home_Page.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
