@@ -51,7 +51,7 @@ class _ColdCoffeeScreenState extends State<ColdCoffeeScreen> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.grey.withOpacity(0.2),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.black,
                     spreadRadius: 3,
@@ -61,19 +61,17 @@ class _ColdCoffeeScreenState extends State<ColdCoffeeScreen> {
               ),
               child: Column(
                 children: [
-                  Container(
-                    child: Image.asset(
-                      "${ccimages[i]}",
-                      width: 150,
-                      height: 150,
-                      fit: BoxFit.contain,
-                    ),
+                  Image.asset(
+                    ccimages[i],
+                    width: 150,
+                    height: 150,
+                    fit: BoxFit.contain,
                   ),
                   const SizedBox(height: 8),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 12),
                     child: Text(
-                      '${coldcoffee[i]}',
+                      coldcoffee[i],
                       style: const TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
@@ -86,7 +84,7 @@ class _ColdCoffeeScreenState extends State<ColdCoffeeScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Text(
-                          '${ccprice[i]}',
+                          ccprice[i],
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -102,7 +100,7 @@ class _ColdCoffeeScreenState extends State<ColdCoffeeScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 15),
+                  const SizedBox(height: 15),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -130,7 +128,7 @@ class _ColdCoffeeScreenState extends State<ColdCoffeeScreen> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          padding: EdgeInsets.only(left: 23,right: 23,top: 5,bottom: 5),
+                          padding: const EdgeInsets.only(left: 23,right: 23,top: 5,bottom: 5),
                         ),
                         onPressed: () {},
                         child: const Text(

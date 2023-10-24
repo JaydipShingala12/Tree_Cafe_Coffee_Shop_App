@@ -36,7 +36,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.grey.withOpacity(0.5),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Colors.black,
                   spreadRadius: 3,

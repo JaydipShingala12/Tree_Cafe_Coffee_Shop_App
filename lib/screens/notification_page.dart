@@ -46,19 +46,19 @@ class _NotificationPageState extends State<NotificationPage> {
         children: [
           for (int i = 0; i < notifications.length; i++)
             Padding(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: ListTile(
                 title: Text(
-                  '${notifications[i]}',
-                  style: TextStyle(
+                  notifications[i],
+                  style: const TextStyle(
                     color: Colors.white,
                   ),
                 ),
                 subtitle: Padding(
-                  padding: EdgeInsets.only(top: 5),
+                  padding: const EdgeInsets.only(top: 5),
                   child: Text(
-                    '${time[i]}',
-                    style: TextStyle(
+                    time[i],
+                    style: const TextStyle(
                       color: Colors.white,
                     ),
                   ),

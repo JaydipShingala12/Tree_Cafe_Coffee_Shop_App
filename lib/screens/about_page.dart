@@ -25,7 +25,7 @@ class _AboutPageState extends State<AboutPage> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.grey.withOpacity(0.5),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Colors.black,
                   spreadRadius: 3,

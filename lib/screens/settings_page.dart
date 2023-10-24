@@ -26,27 +26,27 @@ class _SettingPageState extends State<SettingPage> {
       ),
       body: ListView(
         children: [
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           for (int i = 0; i < items.length; i++)
             Padding(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: ListTile(
                 onTap: () {},
                 tileColor: Colors.white.withOpacity(0.5),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
-                  side: BorderSide(width: 2),
+                  side: const BorderSide(width: 2),
                 ),
                 splashColor: Colors.amber,
                 title: Text(
                   '${items[i]}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 25,
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                trailing: Icon(
+                trailing: const Icon(
                   Icons.arrow_forward_ios,
                   color: Colors.white,
                   size: 25,

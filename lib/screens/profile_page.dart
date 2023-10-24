@@ -18,12 +18,12 @@ class _ProfilePageState extends State<ProfilePage> {
       body: Container(
         height: 500,
         width: 300,
-        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
-        margin: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+        margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 50),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.grey.withOpacity(0.5),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Colors.black,
               spreadRadius: 3,
@@ -35,14 +35,14 @@ class _ProfilePageState extends State<ProfilePage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CircleAvatar(
-              child: Image.asset('assets/images/profile_icon.png'),
               maxRadius: 100.0,
+              child: Image.asset('assets/images/profile_icon.png'),
             ),
-            Divider(
+            const Divider(
               color: Colors.white60,
               height: 30,
             ),
-            Row(
+            const Row(
               children: [
                 Text(
                   'Name :- ',
@@ -61,8 +61,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ],
             ),
-            SizedBox(height: 15),
-            Row(
+            const SizedBox(height: 15),
+            const Row(
               children: [
                 Text(
                   'Email id :- ',
@@ -81,8 +81,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ],
             ),
-            SizedBox(height: 15),
-            Row(
+            const SizedBox(height: 15),
+            const Row(
               children: [
                 Text(
                   'Password :- ',
@@ -101,15 +101,15 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orange,
                 padding:
-                    EdgeInsets.only(top: 5, bottom: 5, right: 20, left: 20),
+                    const EdgeInsets.only(top: 5, bottom: 5, right: 20, left: 20),
               ),
               onPressed: () {},
-              child: Text('Edit Profile'),
+              child: const Text('Edit Profile'),
             ),
           ],
         ),

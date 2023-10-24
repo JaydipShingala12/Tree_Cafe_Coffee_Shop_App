@@ -55,7 +55,7 @@ class _FavouritesPageState extends State<FavouritesPage> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.grey.withOpacity(0.2),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.black,
                     spreadRadius: 3,
@@ -65,19 +65,17 @@ class _FavouritesPageState extends State<FavouritesPage> {
               ),
               child: Column(
                 children: [
-                  Container(
-                    child: Image.asset(
-                      "${fvimages[i]}",
-                      width: 150,
-                      height: 150,
-                      fit: BoxFit.contain,
-                    ),
+                  Image.asset(
+                    fvimages[i],
+                    width: 150,
+                    height: 150,
+                    fit: BoxFit.contain,
                   ),
                   const SizedBox(height: 8),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 12),
                     child: Text(
-                      '${favourites[i]}',
+                      favourites[i],
                       style: const TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
@@ -90,7 +88,7 @@ class _FavouritesPageState extends State<FavouritesPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Text(
-                          '${fvprice[i]}',
+                          fvprice[i],
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,

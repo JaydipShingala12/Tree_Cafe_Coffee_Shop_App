@@ -64,7 +64,7 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.grey.withOpacity(0.2),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.black,
                     spreadRadius: 3,
@@ -74,19 +74,17 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
               ),
               child: Column(
                 children: [
-                  Container(
-                    child: Image.asset(
-                      "${cdimages[i]}",
-                      width: 150,
-                      height: 150,
-                      fit: BoxFit.contain,
-                    ),
+                  Image.asset(
+                    cdimages[i],
+                    width: 150,
+                    height: 150,
+                    fit: BoxFit.contain,
                   ),
                   const SizedBox(height: 8),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 12),
                     child: Text(
-                      '${colddrinks[i]}',
+                      colddrinks[i],
                       style: const TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
@@ -99,7 +97,7 @@ class _ColdDrinksScreenState extends State<ColdDrinksScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Text(
-                          '${cdprice[i]}',
+                          cdprice[i],
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,

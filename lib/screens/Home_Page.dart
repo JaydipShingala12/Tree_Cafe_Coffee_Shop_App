@@ -9,7 +9,6 @@ import 'package:coffee_shop_app/screens/notification_page.dart';
 import 'package:coffee_shop_app/screens/orders_page.dart';
 import 'package:coffee_shop_app/screens/profile_page.dart';
 import 'package:coffee_shop_app/screens/settings_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -50,7 +49,7 @@ class _HomepageState extends State<Homepage>
     _tabController!.dispose();
   }
 
-  GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +65,7 @@ class _HomepageState extends State<Homepage>
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ProfilePage(),
+                    builder: (context) => const ProfilePage(),
                   ),
                 );
               },
@@ -75,13 +74,13 @@ class _HomepageState extends State<Homepage>
                 color: Colors.orange.withOpacity(0.7),
                 child: Column(
                   children: [
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     CircleAvatar(
-                      child: Image.asset('assets/images/profile_icon.png'),
                       maxRadius: 70,
+                      child: Image.asset('assets/images/profile_icon.png'),
                     ),
-                    SizedBox(height: 20),
-                    Row(
+                    const SizedBox(height: 20),
+                    const Row(
                       children: [
                         SizedBox(width: 20),
                         Text(
@@ -93,8 +92,8 @@ class _HomepageState extends State<Homepage>
                         ),
                       ],
                     ),
-                    SizedBox(height: 5),
-                    Row(
+                    const SizedBox(height: 5),
+                    const Row(
                       children: [
                         SizedBox(width: 20),
                         Text(
@@ -110,17 +109,17 @@ class _HomepageState extends State<Homepage>
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             ListTile(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => FavouritesPage(),
+                    builder: (context) => const FavouritesPage(),
                   ),
                 );
               },
-              title: Text(
+              title: const Text(
                 'Favourites',
                 style: TextStyle(
                   color: Colors.white,
@@ -128,7 +127,7 @@ class _HomepageState extends State<Homepage>
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              leading: Icon(
+              leading: const Icon(
                 Icons.favorite_outline,
                 color: Colors.white,
                 size: 25,
@@ -139,11 +138,11 @@ class _HomepageState extends State<Homepage>
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => OrderPage(),
+                    builder: (context) => const OrderPage(),
                   ),
                 );
               },
-              title: Text(
+              title: const Text(
                 'Orders',
                 style: TextStyle(
                   color: Colors.white,
@@ -151,7 +150,7 @@ class _HomepageState extends State<Homepage>
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              leading: Icon(
+              leading: const Icon(
                 Icons.reorder_outlined,
                 color: Colors.white,
                 size: 25,
@@ -162,11 +161,11 @@ class _HomepageState extends State<Homepage>
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => FeedbackPage(),
+                    builder: (context) => const FeedbackPage(),
                   ),
                 );
               },
-              title: Text(
+              title: const Text(
                 'Feedback',
                 style: TextStyle(
                   color: Colors.white,
@@ -174,7 +173,7 @@ class _HomepageState extends State<Homepage>
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              leading: Icon(
+              leading: const Icon(
                 Icons.feedback,
                 color: Colors.white,
                 size: 25,
@@ -185,11 +184,11 @@ class _HomepageState extends State<Homepage>
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AboutPage(),
+                    builder: (context) => const AboutPage(),
                   ),
                 );
               },
-              title: Text(
+              title: const Text(
                 'About Us',
                 style: TextStyle(
                   color: Colors.white,
@@ -197,7 +196,7 @@ class _HomepageState extends State<Homepage>
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              leading: Icon(
+              leading: const Icon(
                 Icons.info_outline,
                 color: Colors.white,
                 size: 25,
@@ -208,11 +207,11 @@ class _HomepageState extends State<Homepage>
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SettingPage(),
+                    builder: (context) => const SettingPage(),
                   ),
                 );
               },
-              title: Text(
+              title: const Text(
                 'Settings',
                 style: TextStyle(
                   color: Colors.white,
@@ -220,7 +219,7 @@ class _HomepageState extends State<Homepage>
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              leading: Icon(
+              leading: const Icon(
                 Icons.settings,
                 color: Colors.white,
                 size: 25,
@@ -235,7 +234,7 @@ class _HomepageState extends State<Homepage>
           child: ListView(
             children: [
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -245,14 +244,14 @@ class _HomepageState extends State<Homepage>
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
-                        minimumSize: Size.square(5),
+                        minimumSize: const Size.square(5),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.sort_rounded,
                         size: 35,
                       ),
                     ),
-                    SizedBox(width: 15),
+                    const SizedBox(width: 15),
                     Text(
                       'Welcome Coffee Lover,',
                       style: GoogleFonts.signika(
@@ -263,7 +262,8 @@ class _HomepageState extends State<Homepage>
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => NotificationPage()));
+                                builder: (context) =>
+                                    const NotificationPage()));
                       },
                       icon: Icon(
                         Icons.notifications,
@@ -274,8 +274,8 @@ class _HomepageState extends State<Homepage>
                   ],
                 ),
               ),
-              SizedBox(height: 30),
-              Padding(
+              const SizedBox(height: 30),
+              const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 15),
                 child: Text(
                   "Coffee is a hug in a mug.",
@@ -286,17 +286,18 @@ class _HomepageState extends State<Homepage>
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                margin:
+                    const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
                 width: MediaQuery.of(context).size.width,
                 height: 60,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 50, 54, 56),
+                  color: const Color.fromARGB(255, 50, 54, 56),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextFormField(
                   cursorColor: Colors.white,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                   key: searchkey,
                   decoration: InputDecoration(
                     border: InputBorder.none,
@@ -316,7 +317,7 @@ class _HomepageState extends State<Homepage>
                 alignment: Alignment.topLeft,
                 child: Column(
                   children: [
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.all(15),
                       child: Text(
                         'Categories',
@@ -328,14 +329,14 @@ class _HomepageState extends State<Homepage>
                       ),
                     ),
                     Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
-                      margin:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey.withOpacity(0.2),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Colors.black,
                             spreadRadius: 3,
@@ -350,19 +351,18 @@ class _HomepageState extends State<Homepage>
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HotCofeeScreen()),
+                                    builder: (context) =>
+                                        const HotCofeeScreen()),
                               );
                             },
-                            child: Container(
-                              child: Image.asset(
-                                "assets/images/hot_coffee.png",
-                                width: 200,
-                                height: 200,
-                                fit: BoxFit.contain,
-                              ),
+                            child: Image.asset(
+                              "assets/images/hot_coffee.png",
+                              width: 200,
+                              height: 200,
+                              fit: BoxFit.contain,
                             ),
                           ),
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(bottom: 8),
                             child: Align(
                               // alignment: Alignment.centerLeft,
@@ -379,14 +379,14 @@ class _HomepageState extends State<Homepage>
                       ),
                     ),
                     Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
-                      margin:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey.withOpacity(0.2),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Colors.black,
                             spreadRadius: 3,
@@ -401,19 +401,18 @@ class _HomepageState extends State<Homepage>
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => ColdCoffeeScreen()),
+                                    builder: (context) =>
+                                        const ColdCoffeeScreen()),
                               );
                             },
-                            child: Container(
-                              child: Image.asset(
-                                "assets/images/cold_coffee.png",
-                                width: 200,
-                                height: 200,
-                                fit: BoxFit.contain,
-                              ),
+                            child: Image.asset(
+                              "assets/images/cold_coffee.png",
+                              width: 200,
+                              height: 200,
+                              fit: BoxFit.contain,
                             ),
                           ),
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(bottom: 8),
                             child: Align(
                               // alignment: Alignment.centerLeft,
@@ -430,14 +429,14 @@ class _HomepageState extends State<Homepage>
                       ),
                     ),
                     Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
-                      margin:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey.withOpacity(0.2),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Colors.black,
                             spreadRadius: 3,
@@ -452,19 +451,17 @@ class _HomepageState extends State<Homepage>
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HotTeaScreen()),
+                                    builder: (context) => const HotTeaScreen()),
                               );
                             },
-                            child: Container(
-                              child: Image.asset(
-                                "assets/images/hot_teas.png",
-                                width: 200,
-                                height: 200,
-                                fit: BoxFit.contain,
-                              ),
+                            child: Image.asset(
+                              "assets/images/hot_teas.png",
+                              width: 200,
+                              height: 200,
+                              fit: BoxFit.contain,
                             ),
                           ),
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(bottom: 8),
                             child: Align(
                               // alignment: Alignment.centerLeft,
@@ -481,14 +478,14 @@ class _HomepageState extends State<Homepage>
                       ),
                     ),
                     Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
-                      margin:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 50),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey.withOpacity(0.2),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Colors.black,
                             spreadRadius: 3,
@@ -503,19 +500,18 @@ class _HomepageState extends State<Homepage>
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => ColdDrinksScreen()),
+                                    builder: (context) =>
+                                        const ColdDrinksScreen()),
                               );
                             },
-                            child: Container(
-                              child: Image.asset(
-                                "assets/images/cold_drinks.png",
-                                width: 200,
-                                height: 200,
-                                fit: BoxFit.contain,
-                              ),
+                            child: Image.asset(
+                              "assets/images/cold_drinks.png",
+                              width: 200,
+                              height: 200,
+                              fit: BoxFit.contain,
                             ),
                           ),
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(bottom: 8),
                             child: Align(
                               // alignment: Alignment.centerLeft,

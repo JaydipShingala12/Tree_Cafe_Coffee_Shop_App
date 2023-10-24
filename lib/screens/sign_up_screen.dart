@@ -27,7 +27,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => WelcomeScreen()),
+                MaterialPageRoute(builder: (context) => const WelcomeScreen()),
               );
             },
             icon: const Icon(
@@ -35,7 +35,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               size: 28,
             )),
         backgroundColor: Colors.orange,
-        title: Text('Sign Up'),
+        title: const Text('Sign Up'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -45,9 +45,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 200),
+                  const SizedBox(height: 200),
                   Padding(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     child: TextFormField(
                       cursorColor: Colors.white,
                       inputFormatters: [
@@ -62,9 +62,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         filled: true,
                         fillColor: Colors.white60,
                         labelText: "Name",
-                        labelStyle: TextStyle(color: Colors.white),
+                        labelStyle: const TextStyle(color: Colors.white),
                         hintText: "Enter Your Name",
-                        hintStyle: TextStyle(color: Colors.white),
+                        hintStyle: const TextStyle(color: Colors.white),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -76,7 +76,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     child: TextFormField(
                       cursorColor: Colors.white,
                       inputFormatters: [
@@ -91,9 +91,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         filled: true,
                         fillColor: Colors.white60,
                         labelText: "Email id",
-                        labelStyle: TextStyle(color: Colors.white),
+                        labelStyle: const TextStyle(color: Colors.white),
                         hintText: "Enter Your Email id",
-                        hintStyle: TextStyle(color: Colors.white),
+                        hintStyle: const TextStyle(color: Colors.white),
                       ),
                       keyboardType: TextInputType.emailAddress,
                       validator: (value) {
@@ -106,7 +106,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     child: TextFormField(
                       cursorColor: Colors.white,
                       inputFormatters: [
@@ -122,9 +122,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         filled: true,
                         fillColor: Colors.white60,
                         labelText: "Password",
-                        labelStyle: TextStyle(color: Colors.white),
+                        labelStyle: const TextStyle(color: Colors.white),
                         hintText: "Enter Your Password",
-                        hintStyle: TextStyle(color: Colors.white),
+                        hintStyle: const TextStyle(color: Colors.white),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -138,18 +138,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Already have an account?",
                   style: TextStyle(
                       color: Colors.white60,
                       fontWeight: FontWeight.w500,
                       fontSize: 15),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 GestureDetector(
                   onTap: () {
                     setState(() {
@@ -160,7 +160,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       );
                     });
                   },
-                  child: Text(
+                  child: const Text(
                     'log in',
                     style: TextStyle(
                         color: Colors.orange,
@@ -170,17 +170,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 )
               ],
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             GestureDetector(
               onTap: () {
               },
-              child: Text(
+              child: const Text(
                 'Forgot your password?',
                 style:
                     TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
                 if (store.currentState!.validate()) {
@@ -207,7 +207,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orange,
               ),
-              child: Text('Sign Up'),
+              child: const Text('Sign Up'),
             ),
           ],
         ),
@@ -216,7 +216,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   }
 
   showsnk(context) {
-    var snk = SnackBar(
+    var snk = const SnackBar(
       content: Text('Thanks for signing up.'),
       backgroundColor: Colors.green,
       behavior: SnackBarBehavior.floating,
